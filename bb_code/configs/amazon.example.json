@@ -1,0 +1,12 @@
+{
+  "raw_reviews": "data/reviews_Beauty_5.json.gz",
+  "feature_id_mapping": "data/id_mapping.json",
+  "content_embeddings": "data/sentence-t5-base.sent_emb",
+  "time_quantiles": [
+    0.6,
+    0.8
+  ],
+  "tokenizer": {
+    "random_seed": 20260910
+  }
+}

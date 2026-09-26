@@ -1,0 +1,36 @@
+{
+  "recipes": {
+    "long": {
+      "lr": 0.0003,
+      "schedule": "constant",
+      "ema": null,
+      "cross_day_weight": false
+    },
+    "smooth": {
+      "lr": 0.0001,
+      "schedule": "cosine",
+      "eta_min": 1e-05,
+      "ema": 0.99,
+      "cross_day_weight": false
+    },
+    "cross_day": {
+      "lr": 0.0001,
+      "schedule": "cosine",
+      "eta_min": 1e-05,
+      "ema": 0.99,
+      "cross_day_weight": true
+    }
+  },
+  "training": {
+    "max_epochs": 60,
+    "minimum_epochs": 20,
+    "check_every": 5,
+    "patience_checks": 4,
+    "min_delta": 0.0,
+    "batch": 256,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "ema_update": "after every optimizer step; evaluate EMA only for EMA recipes",
+    "cross_day_weights": "2 for positive target-minus-last-history day gap, 0.5 for zero gap; normalize weights to mean one on the full training set; average per-example 4-token CE weighted by these fixed weights"
+  }
+}

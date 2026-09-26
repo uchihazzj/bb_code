@@ -1,0 +1,15 @@
+{
+  "candidate_generation": {
+    "sample_contexts": 256,
+    "proposals_per_method": 12,
+    "states_per_context": 8,
+    "max_q": 8,
+    "max_states_enumerated": 256,
+    "identity_edit_budget": 16,
+    "targets_per_state": 4
+  },
+  "training_selection": {
+    "candidate_audit_rows": 1024,
+    "shared_steps": 4
+  }
+}

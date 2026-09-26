@@ -1,0 +1,98 @@
+{
+  "beam_width": 40,
+  "completion_batch": 20,
+  "additional_budget": 80,
+  "certificate_allowance": 0.001,
+  "settings": [
+    {
+      "dataset": "beauty",
+      "seed": 17,
+      "adaptation_setting": "long",
+      "adaptation_epoch": 20,
+      "update_epoch_including_warmup": 25,
+      "weight": 1.125,
+      "gamma": 1.25,
+      "bias": 2.5
+    },
+    {
+      "dataset": "beauty",
+      "seed": 42,
+      "adaptation_setting": "long",
+      "adaptation_epoch": 10,
+      "update_epoch_including_warmup": 15,
+      "weight": 1.5,
+      "gamma": 1.25,
+      "bias": 2.5
+    },
+    {
+      "dataset": "beauty",
+      "seed": 2027,
+      "adaptation_setting": "cross_day",
+      "adaptation_epoch": 5,
+      "update_epoch_including_warmup": 10,
+      "weight": 1.125,
+      "gamma": 1.125,
+      "bias": 2.5
+    },
+    {
+      "dataset": "tools",
+      "seed": 17,
+      "adaptation_setting": "smooth",
+      "adaptation_epoch": 5,
+      "update_epoch_including_warmup": 10,
+      "weight": 0.625,
+      "gamma": 0.25,
+      "bias": 1.75
+    },
+    {
+      "dataset": "tools",
+      "seed": 42,
+      "adaptation_setting": "smooth",
+      "adaptation_epoch": 0,
+      "update_epoch_including_warmup": 5,
+      "weight": 0.75,
+      "gamma": 0.25,
+      "bias": 2.25
+    },
+    {
+      "dataset": "tools",
+      "seed": 2027,
+      "adaptation_setting": "smooth",
+      "adaptation_epoch": 0,
+      "update_epoch_including_warmup": 5,
+      "weight": 0.25,
+      "gamma": 0.625,
+      "bias": 2.25
+    },
+    {
+      "dataset": "toys",
+      "seed": 17,
+      "adaptation_setting": "long",
+      "adaptation_epoch": 40,
+      "update_epoch_including_warmup": 45,
+      "weight": 0.25,
+      "gamma": 1.0,
+      "bias": 1.0
+    },
+    {
+      "dataset": "toys",
+      "seed": 42,
+      "adaptation_setting": "cross_day",
+      "adaptation_epoch": 55,
+      "update_epoch_including_warmup": 60,
+      "weight": 0.5,
+      "gamma": 1.0,
+      "bias": 1.5
+    },
+    {
+      "dataset": "toys",
+      "seed": 2027,
+      "adaptation_setting": "long",
+      "adaptation_epoch": 20,
+      "update_epoch_including_warmup": 25,
+      "weight": 0.25,
+      "gamma": 1.0,
+      "bias": 1.0
+    }
+  ]
+}
